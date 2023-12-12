@@ -1,0 +1,97 @@
+:root{
+    font-size: 62.5%;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212, #212b46);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #add3dd;
+    width: 50rem;
+    border-radius: .8rem;
+}
+
+.main h2{
+    margin: 1.6rem 0;
+    font-size: 3.9rem;
+}
+.main span{
+    margin-bottom: 1.6rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.title{
+    font-size: 8.5rem;
+    color: #FFF;
+    animation: flipTitle 2s;
+}
+
+@keyframes flipTitle {
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+
+.containterInput{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    margin: 3.4rem 0;
+    display: flex;
+    border-radius: .8rem;
+    box-shadow: .1rem .3rem .8rem rgba(0,0,0, 0.5);    
+}
+
+.containterInput input{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    margin-right: .8rem;
+}
+
+.containterInput input::placeholder{
+    color: #f1f1f1;
+}
+
+.buttonSearch{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonSearch:hover{
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 620px){
+    .title{
+        font-size: 6rem;
+    }
+    .main h2{
+        font-size: 3.2rem;
+    }
+    main{
+        width: 80%;
+        min-height:25rem;
+    }
+}
+
